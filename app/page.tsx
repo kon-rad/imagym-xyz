@@ -5,8 +5,8 @@ const APP_STORE_URL = "https://apps.apple.com/app/imagym-ai-visualization/id6746
 const PRIVACY_URL = "https://konradgnat.notion.site/Imagym-Privacy-Policy-20cba635994d8009976ae3e76e779036";
 
 function Mark() { return <span className="mark" aria-hidden="true"><i /><i /><i /></span>; }
-function Header() { return <header className="nav shell"><Link className="brand" href="/">IMAGYM</Link><nav aria-label="Primary"><Link href="/#how">How it works</Link><Link href="/blog/how-to-visualize">Blog</Link><a className="button button--small" href={APP_STORE_URL}>Get the app</a></nav></header>; }
-function Footer() { return <footer className="footer shell"><Link className="brand" href="/">IMAGYM</Link><nav><Link href="/blog/how-to-visualize">Blog</Link><a href={PRIVACY_URL}>Privacy</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms</a></nav><p>Made with intention by <a href="https://x.com/konrad_gnat">Konrad Gnat</a></p></footer>; }
+function Header() { return <header className="nav shell"><Link className="brand" href="/">IMAGYM</Link><nav aria-label="Primary"><Link href="/#how">How it works</Link><Link href="/blog/how-to-visualize">Blog</Link><Link href="/contact">Contact</Link><a className="button button--small" href={APP_STORE_URL}>Get the app</a></nav></header>; }
+function Footer() { return <footer className="footer shell"><Link className="brand" href="/">IMAGYM</Link><nav><Link href="/blog/how-to-visualize">Blog</Link><Link href="/contact">Contact</Link><a href={PRIVACY_URL}>Privacy</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms</a></nav><p>Made with intention by <a href="https://x.com/konrad_gnat">Konrad Gnat</a></p></footer>; }
 function Phone({ src, alt, className = "" }: { src: string; alt: string; className?: string }) { return <div className={`phone ${className}`}><Image src={src} alt={alt} width={780} height={1688} sizes="(max-width: 700px) 72vw, 310px" /></div>; }
 
 const features = [
@@ -18,11 +18,16 @@ const features = [
   ["Designed for repetition", "Listen before a meaningful moment or make it part of a regular mental rehearsal practice."],
 ];
 const gallery = [
+  ["/screens/reskin/home.png", "Imagym home screen explaining the daily visualization practice"],
+  ["/screens/reskin/intention.png", "Imagym intention detail screen"],
   ["/screens/reskin/record.png", "Imagym recording screen with prompts for describing a future moment"],
   ["/screens/reskin/building.png", "Imagym creating a visualization track"],
   ["/screens/reskin/listen.png", "Imagym listening screen with generated visualization tracks"],
+  ["/screens/reskin/player.png", "Imagym full-screen visualization audio player"],
   ["/screens/reskin/script.png", "Imagym script screen showing the scene behind a track"],
   ["/screens/reskin/library.png", "Imagym visualization library"],
+  ["/screens/reskin/change-voice.png", "Imagym voice and background sound controls"],
+  ["/screens/reskin/settings.png", "Imagym settings screen"],
 ];
 
 export default function Home() {
