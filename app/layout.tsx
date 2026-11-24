@@ -6,13 +6,14 @@ const sans = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-sans", 
 const serif = Newsreader({ subsets: ["latin"], style: ["normal", "italic"], variable: "--font-serif", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Imagym: AI visualization for your future self",
+  metadataBase: new URL("https://imagym.xyz"),
+  title: "Imagym: Make your future feel real",
   description:
-    "Talk through the future you want with a live AI voice guide, then keep a personalized audio visualization you can replay any time. Free on the App Store for iPhone.",
+    "Describe a future moment in your own words. Imagym turns it into a personal guided visualization you can listen to again.",
   openGraph: {
-    title: "Imagym: AI visualization for your future self",
-    description: "Speak your future, hear it back, rehearse it until it feels real.",
-    images: ["/screens/home.webp"],
+    title: "Imagym: Make your future feel real",
+    description: "Describe your future, hear it back, and return to the moment.",
+    images: ["/screens/reskin/home.png"],
   },
 };
 
