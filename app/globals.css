@@ -489,6 +489,9 @@ h3 {
   max-width: 76ch;
   color: var(--muted);
 }
+.legal section p + p {
+  margin-top: 20px;
+}
 .legal section ul {
   display: grid;
   gap: 16px;
