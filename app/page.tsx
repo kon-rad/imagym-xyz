@@ -2,11 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const APP_STORE_URL = "https://apps.apple.com/app/imagym-ai-visualization/id6746975853";
-const PRIVACY_URL = "https://konradgnat.notion.site/Imagym-Privacy-Policy-20cba635994d8009976ae3e76e779036";
 
 function Mark() { return <span className="mark" aria-hidden="true"><i /><i /><i /></span>; }
 function Header() { return <header className="nav shell"><Link className="brand" href="/">IMAGYM</Link><nav aria-label="Primary"><Link href="/#how">How it works</Link><Link href="/blog/how-to-visualize">Blog</Link><Link href="/contact">Contact</Link><a className="button button--small" href={APP_STORE_URL}>Get the app</a></nav></header>; }
-function Footer() { return <footer className="footer shell"><Link className="brand" href="/">IMAGYM</Link><nav><Link href="/blog/how-to-visualize">Blog</Link><Link href="/contact">Contact</Link><a href={PRIVACY_URL}>Privacy</a><Link href="/terms">Terms</Link></nav><p>Made with intention by <a href="https://x.com/konrad_gnat">Konrad Gnat</a></p></footer>; }
+function Footer() { return <footer className="footer shell"><Link className="brand" href="/">IMAGYM</Link><nav><Link href="/blog/how-to-visualize">Blog</Link><Link href="/contact">Contact</Link><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link></nav><p>Made with intention by <a href="https://x.com/konrad_gnat">Konrad Gnat</a></p></footer>; }
 function Phone({ src, alt, className = "" }: { src: string; alt: string; className?: string }) { return <div className={`phone ${className}`}><Image src={src} alt={alt} width={780} height={1688} sizes="(max-width: 700px) 72vw, 310px" /></div>; }
 
 const features = [
