@@ -478,6 +478,28 @@ h3 {
   margin-bottom: 42px;
   max-width: 14ch;
 }
+.terms__action {
+  margin-block: 32px;
+}
+.legal section + section {
+  margin-top: 58px;
+}
+.legal section p,
+.legal section li {
+  max-width: 76ch;
+  color: var(--muted);
+}
+.legal section p + p {
+  margin-top: 20px;
+}
+.legal section ul {
+  display: grid;
+  gap: 16px;
+  padding-left: 24px;
+}
+.legal section strong {
+  color: var(--text);
+}
 .contact__reasons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
